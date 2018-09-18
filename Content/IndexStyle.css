@@ -1,0 +1,18 @@
+﻿body {
+    font-family: 'Times New Roman';
+    font-size: 12px;
+ 
+}
+
+.labelheader {
+    font-weight:bold;
+
+}
+
+table {
+    margin-left:20px;
+}
+
+span.field-validation-error {
+    color: red;
+}

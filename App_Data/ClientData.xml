@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Clients>
+  <Client ClientName="r" WebUrl="www" FilePath="C:\Development\MVCSample\MVCSample\Content\Documents\TestDoc.docx" />
+  <Client ClientName="r" WebUrl="r" FilePath="C:\Development\MVCSample\MVCSample\Content\Documents\TestDoc.docx" />
+  <Client ClientName="4" WebUrl="4" FilePath="C:\Development\MVCSample\MVCSample\Content\Documents\TestDoc.docx" />
+  <Client ClientName="Test1" WebUrl="4" FilePath="C:\Development\MVCSample\MVCSample\Content\Documents\TestDoc.docx" />
+  <Client ClientName="r" WebUrl="4" FilePath="C:\Development\MVCSample\MVCSample\Content\Documents\TestDoc.docx" />
+  <Client ClientName="Test1" WebUrl="www" FilePath="C:\Development\MVCSample\MVCSample\Content\Documents\TestDoc.docx" />
+  <Client ClientName="Test1" WebUrl="www" FilePath="C:\Development\MVCSample\MVCSample\Content\Documents\TestDoc.docx" />
+  <Client ClientName="test" WebUrl="www" FilePath="C:\Development\MVCSample\MVCSample\Content\Documents\TestDoc.docx" />
+  <Client ClientName="test" WebUrl="24" FilePath="C:\Development\MVCSample\MVCSample\Content\Documents\TestDoc.docx" />
+  <Client ClientName="test" WebUrl="www" FilePath="C:\Development\MVCSample\MVCSample\Content\Documents\TestDoc.docx" />
+</Clients>

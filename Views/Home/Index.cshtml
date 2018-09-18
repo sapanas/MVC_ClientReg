@@ -1,0 +1,76 @@
+﻿@model MVCSample.Models.Company
+
+@{
+    ViewBag.Title = "Client Registration Page";
+
+}
+@section MyScripts {
+    <script type="text/javascript">
+     
+        if('@ViewBag.successMessage'!="")
+{
+   $('#divSuccessMessage').show();
+}
+else
+{
+  $('#divSuccessMessage').hide();
+}
+        $("#reset").click(function () {
+            $("input[type=text]").val("");
+
+        });
+
+    </script>
+}
+<div id="divSuccessMessage" style="font-family:Arial; font-size:14px; font-weight:bold;">
+   @ViewBag.successMessage
+</div>
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { encType = "multipart/form-data" }))
+{
+    <table>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <label id="labelClientName" class="labelheader"> Company Name :</label>
+            </td>
+            <td>
+                @Html.TextBoxFor(m => m.CompanyName)
+                @Html.ValidationMessageFor(model => model.CompanyName, "")
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label id="labelClientWebUrl" class="labelheader">  Company Web Url :</label>
+
+            </td>
+            <td>
+                @Html.TextBoxFor(m => m.WebUrl)
+                @Html.ValidationMessageFor(model => model.WebUrl, "")
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label id="labelClientFile" class="labelheader">   Select Document to upload :</label>
+
+            </td>
+            <td>
+                <input type="file" name="File" id="File" />
+                @Html.ValidationMessageFor(model => model.File, "")
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" name="submit" value="Register" />
+            </td>
+            <td>
+                <input type="button" name="reset" value="Cancel" id="reset" />
+            </td>
+        </tr>
+    </table>
+}
